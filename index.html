@@ -3,90 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Agency UX</title>
   </head>
   <body>
     <header class="header">
-      <div class="logo">
-        <img src="./img/logo.png" alt="Agency UX" class="logo__img" />
+      <div class="header__block-left">
+        <div class="wrapper">
+          <!-- <img src="./img/logo.png" alt="Agency UX" class="logo__img" /> -->
+          <a href="#" class="logo">
+            <div class="logo__img"></div>
+          </a>
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item menu__item-active">
+              <a href="#" class="menu__link">О компании</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Продукты</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Кейсы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item menu__item-active">
-            <a href="" class="menu__link">О компании</a>
-          </li>
-          <li class="menu__item">
-            <a href="" class="menu__link">Услуги</a>
-          </li>
-          <li class="menu__item">
-            <a href="" class="menu__link">Продукты</a>
-          </li>
-          <li class="menu__item">
-            <a href="" class="menu__link">Кейсы</a>
-          </li>
-          <li class="menu__item">
-            <a href="" class="menu__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="phone-btn">+7 (995) 960-50-70</button>
+      <div class="header__block-right">
+        <div class="phone-button">
+          <a href="tel:+79959605070" class="phone-button__call">+7 (995) 960-50-70</a>
+        </div>
+        <!-- <button class="phone-btn">+7 (995) 960-50-70</button> -->
+      </div>
     </header>
     <main class="main">
       <section class="sections">
         <div class="main-page">
           <div class="main-page__content">
             <div class="main-page__left-item">
-              <h1 class="main-page__title">Стартовый интернет-маркетинг</h1>
-              <button class="application-btn"></button>
+              <div class="main-page__title">
+                <h1 class="title">Стартовый интернет-маркетинг</h1>
+              </div>
+              <div class="cta">
+                <div class="cta__button">
+                  <a href="#" class="cta__button-link">Оставить заявку</a>
+                </div>
+              </div>
+              <!-- <button class="application-btn"></button> -->
             </div>
             <div class="main-page__right-item">
-              <p class="main-page__text">
-                Поможем бизнесу найти новых клиентов в интернете. Это выведет
-                продажи на новый уровень и позволит компании масштабироваться
-              </p>
+              <div class="main-page__text">
+                <p class="text">
+                  Поможем бизнесу найти новых клиентов в интернете. Это выведет
+                  продажи на новый уровень и позволит компании масштабироваться
+                </p>
+              </div>
             </div>
           </div>
           <div class="main-page__slider">
-            <img src="./img/slider-img.png" alt="" class="slider-img" />
+            <div class="main-slider">
+              <div class="main-slider__img"></div>
+            </div>
+            <div class="slider-button">
+              <div class="slider-button__img"></div>
+            </div>
           </div>
         </div>
       </section>
       <section class="sections">
         <div class="about-us">
           <div class="about-us__tagline">
-            <h2 class="about-us__tagline-title">
-              С нами — легко сделать первый шаг к увеличению узнаваемости бренда
-              и расширению клиентской базы
-            </h2>
-            <p class="about-us__tagline-text">
-              Мы не стремимся быть лучше конкурентов, а хотим помочь нашим
-              клиентам, поэтому предлагаем следующие преимущества
+            <p class="tagline-title">
+              <span class="orange-text">С нами — легко</span><span class="normal-text"> сделать первый шаг к увеличению узнаваемости бренда
+              и расширению клиентской базы</span>
             </p>
+            <div class="about-us__tagline-subtext">
+              <p class="subtext">
+                Мы не стремимся быть лучше конкурентов, а хотим помочь нашим
+                клиентам, поэтому предлагаем следующие преимущества
+              </p>
+            </div>
           </div>
           <div class="about-us__blocks">
-            <div class="about-us__block">
-              <h3 class="about-us__block-title">Глубокий анализ</h3>
-              <p class="about-us__block-text">
-                Проводим исследование рынка, конкурентов, продукта и составляем
-                портрет целевой аудитории. Это позволяет оптимизировать расходы
-                на рекламу
-              </p>
+            <div class="block">
+              <div class="block__text">
+                <p class="block__title">Глубокий анализ</p>
+                <p class="block__subtext">
+                  Проводим исследование рынка, конкурентов, продукта и составляем
+                  портрет целевой аудитории. Это позволяет оптимизировать расходы
+                  на рекламу
+                </p>
+              </div>
+              <div class="block__img">
+                <div class="first-block"></div>
+              </div>
             </div>
-            <div class="about-us__block">
-              <h3 class="about-us__block-title">Создание платформы</h3>
-              <p class="about-us__block-text">
-                По результатам анализа выбираем платформу для продажи товара или
-                услуги. Это может быть лендинг или аккаунт на Авито
-              </p>
+            <div class="block">
+              <div class="block__text">
+                <p class="block__title">Создание платформы</p>
+                <p class="block__subtext">
+                  По результатам анализа выбираем платформу для продажи товара или
+                  услуги. Это может быть лендинг или аккаунт на Авито
+                </p>
+              </div>
+              <div class="block__img">
+                <div class="second-block"></div>
+              </div>
             </div>
-            <div class="about-us__block">
-              <h3 class="about-us__block-title">Запуск каналов продвижения</h3>
-              <p class="about-us__block-text">
-                Выбираем эффективные каналы в зависимости от вашей аудитории,
-                например: таргетированная реклама, поисковая оптимизация, прямая
-                рассылка и другие
-              </p>
+            <div class="block">
+              <div class="block__text">
+                <p class="block__title">Запуск каналов продвижения</p>
+                <p class="block__subtext">
+                  Выбираем эффективные каналы в зависимости от вашей аудитории,
+                  например: таргетированная реклама, поисковая оптимизация, прямая
+                  рассылка и другие
+                </p>
+              </div>
+              <div class="block__img">
+                <div class="third-block"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -96,36 +138,38 @@
           <div class="price__item">
             <div class="price__item-text">
               <div class="old-price">
-                <h3 class="old-price">
-                  <strike>От 3 до 6 месяцев</strike>
-                </h3>
+                <p>
+                  От 3 до 6 месяцев
+                </p>
               </div>
               <div class="new-price">
-                <h2>От 14 до 30 дней</h2>
+                <p>От 14 до 30 дней</p>
               </div>
               <div class="detail-price">
                 <p>в зависимости от сложности продукта</p>
               </div>
             </div>
             <div class="price__item-icon">
+              <div class="icon1"></div>
               <img src="./img/price-img1.png" alt="" class="price__img" />
             </div>
           </div>
           <div class="price__item">
             <div class="price__item-text">
               <div class="old-price">
-                <h3>
-                  <strike>От 119 990 до 359 990 ₽</strike>
-                </h3>
+                <p>
+                  От 119 990 до 359 990 ₽
+                </p>
               </div>
               <div class="new-price">
-                <h2>От 59 400 до 179 200 ₽</h2>
+                <p>От 59 400 до 179 200 ₽</p>
               </div>
               <div class="detail-price">
                 <p>дешевле, чем содержание своего отдела маркетинга</p>
               </div>
             </div>
             <div class="price__item-icon">
+              <div class="icon2"></div>
               <img src="./img/price-img1.png" alt="" class="price__img" />
             </div>
           </div>
@@ -134,9 +178,9 @@
       <section class="sections">
         <div class="cases">
           <div class="cases__header">
-            <h2 class="cases__title">
+            <p class="cases__title">
               Как Стартовый Интернет-Маркетинг уже помог компаниям
-            </h2>
+            </p>
             <div class="cacess__nav">
               <button class="btn-nav"></button>
               <button class="btn-nav"></button>
@@ -144,7 +188,7 @@
           </div>
           <div class="cases__content">
             <div class="cases__left-block">
-              <h3 class="cases__block-title">Стахановец.рф</h3>
+              <p class="cases__block-title">Стахановец.рф</p>
               <ul class="cases__list">
                 <li class="cases__list-item">UI/UX Дизайн</li>
                 <li class="cases__list-item">SEO</li>
@@ -230,15 +274,15 @@
       <section class="sections">
         <div class="qa">
           <div class="qa__title">
-            <h2>Отвечаем на частые вопросы</h2>
+            <p>Отвечаем на частые вопросы</p>
           </div>
           <div class="qa__accordion">
             <div class="qa__accordion-item">
               <div class="qa__accordion-content">
                 <div class="question">
-                  <h3>
+                  <p>
                     У меня уже есть оффлайн-бизнес, зачем мне онлайн-реклама?
-                  </h3>
+                  </p>
                 </div>
                 <div class="answer">
                   <p>
@@ -252,10 +296,10 @@
             <div class="qa__accordion-item">
               <div class="qa__accordion-content">
                 <div class="question">
-                  <h3>
+                  <p>
                     Я не уверен в эффективности интернет-маркетинга для моей
                     отрасл
-                  </h3>
+                  </p>
                 </div>
                 <div class="answer">
                   <p>
@@ -271,7 +315,7 @@
             <div class="qa__accordion-item">
               <div class="qa__accordion-content">
                 <div class="question">
-                  <h3>Я не знаю, с чего начать, это может быть сложно</h3>
+                  <p>Я не знаю, с чего начать, это может быть сложно</p>
                 </div>
                 <div class="answer">
                   <p>
@@ -287,10 +331,10 @@
             <div class="qa__accordion-item">
               <div class="qa__accordion-content">
                 <div class="question">
-                  <h3>
+                  <p>
                     Мы уже обращались в похожие компании, а результата не
                     получили
-                  </h3>
+                  </p>
                 </div>
                 <div class="answer">
                   <p>
@@ -309,41 +353,45 @@
     </main>
     <footer class="footer">
       <div class="footer__firstline">
-        <div class="footer__contacts">
-          <div class="footer__contacts-phone">
+        <div class="contacts">
+          <div class="contacts__phone">
             <a href="#" class="phone">+7 (995) 960-50-70</a>
           </div>
-          <div class="footer__contacts-mail">
+          <div class="contacts__mail">
             <a href="" class="mail">info@agency-ux.ru</a>
           </div>
-          <div class="footer__contacts-address">
+          <div class="contacts__address">
             <p>г. Владимир, ул. Горького, д.50, оф. 5-06</p>
           </div>
         </div>
-        <div class="footer__social">
-          <button></button>
-          <button></button>
+        <div class="social">
+          <div class="social__link">
+            <a href="#" class="first-social"></a>
+          </div>
+          <div class="social__link">
+            <a href="#" class="second-social"></a>
+          </div>
         </div>
       </div>
       <div class="footer__secondline">
         <div class="copyright">
           <p>© 2023 Agency UX</p>
         </div>
-        <nav class="footer__nav">
-          <ul class="footer__nav-list">
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">Политика конфиденциальности</a>
+        <nav class="politics">
+          <ul class="politics__list">
+            <li class="politics__item">
+              <a href="#" class="politics__link">Политика конфиденциальности</a>
             </li>
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">Пользовательское соглашение</a>
+            <li class="politics__item">
+              <a href="#" class="politics__link">Пользовательское соглашение</a>
             </li>
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">Политика рекламной рассылки</a>
+            <li class="politics__item">
+              <a href="#" class="politics__link">Политика рекламной рассылки</a>
             </li>
           </ul>
         </nav>
-        <div class="footer__map">
-          <a href="">Карта сайта</a>
+        <div class="site-map">
+          <a href="#">Карта сайта</a>
         </div>
       </div>
     </footer>
