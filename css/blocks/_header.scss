@@ -1,75 +1,44 @@
+@mixin btn {
+  padding: 15px 40px;
+  align-items: center;
+  background-color: #fa6e37;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+@mixin link {
+  text-decoration: none;
+  color: white;
+}
 .header {
-  width: 100%;
-  height: 100%;
-  padding-left: 240px;
-  padding-right: 240px;
   padding-top: 50px;
   padding-bottom: 50px;
-  background: #232323;
-  justify-content: flex-start;
-  align-items: flex-end;
-  gap: 179px;
-  display: inline-flex;
-  &__block-left {
-    width: 100%;
-    height: 100%;
-    justify-content: flex-start;
+  background-color: #232323;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.38px;
+  .wrap {
     align-items: center;
-    gap: 176px;
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
     .logo__img {
       width: 234px;
       height: 53px;
-      position: relative;
+      // position: relative;
       background-image: url(../img/logo-img.svg);
     }
     .menu__list {
       list-style-type: none;
-      width: 100%;
-      height: 100%;
-      justify-content: flex-start;
-      align-items: flex-start;
+      display: flex;
       gap: 40px;
-      display: inline-flex;
       .menu__link {
-        width: 100%;
-        height: 100%;
-        color: white;
-        font-size: 19px;
-        font-family: Raleway;
-        font-weight: 600;
-        letter-spacing: 0.38px;
-        word-wrap: break-word;
-        text-decoration: none;
+        @include link();
       }
     }
   }
-  &__block-right {
-    width: 100%;
-    height: 100%;
-    justify-content: flex-start;
-    align-items: flex-start;
-    display: inline-flex;
-    .phone-button {
-      padding-left: 40px;
-      padding-right: 40px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      background: #fa6e37;
-      border-radius: 5px;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      display: flex;
-      &__call {
-        color: white;
-        font-size: 19px;
-        font-family: Raleway;
-        font-weight: 600;
-        letter-spacing: 0.38px;
-        word-wrap: break-word;
-        text-decoration: none;
-      }
+  .phone-button {
+    @include link();
+    &__style {
+      @include btn();
     }
   }
 }
