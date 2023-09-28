@@ -482,11 +482,12 @@ a {
   padding: 30px;
   background: #232323;
   border-radius: 5px;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   display: flex;
 }
 .qa .accordion__content {
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   display: flex;
