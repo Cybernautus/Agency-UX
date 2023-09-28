@@ -1,14 +1,3 @@
-@mixin btn {
-  padding: 15px 40px;
-  align-items: center;
-  background-color: #fa6e37;
-  border-radius: 5px;
-  text-transform: uppercase;
-}
-@mixin link {
-  text-decoration: none;
-  color: white;
-}
 .header {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -23,22 +12,12 @@
     .logo__img {
       width: 234px;
       height: 53px;
-      // position: relative;
       background-image: url(../img/logo-img.svg);
     }
     .menu__list {
       list-style-type: none;
       display: flex;
       gap: 40px;
-      .menu__link {
-        @include link();
-      }
-    }
-  }
-  .phone-button {
-    @include link();
-    &__style {
-      @include btn();
     }
   }
 }

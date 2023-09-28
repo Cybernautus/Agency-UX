@@ -11,9 +11,28 @@ body {
   font-variant-numeric: lining-nums;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .wrap {
   max-width: 1440px;
   margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.button {
+  padding: 15px 40px;
+  align-items: center;
+  background-color: #fa6e37;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.orange-text {
+  color: #fa6e37;
 }
 
 @import './blocks/header';

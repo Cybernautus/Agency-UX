@@ -1,79 +1,55 @@
 .footer {
-  width: 100%;
-  height: 100%;
-  padding-left: 240px;
-  padding-right: 240px;
   padding-top: 70px;
   padding-bottom: 70px;
-  background: #1b1b1b;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 53px;
-  display: inline-flex;
-  &__firstline {
-    width: 100%;
-    height: 100%;
-    justify-content: flex-start;
-    align-items: flex-end;
+  .wrap {
+    flex-direction: column;
+    display: flex;
+    gap: 53px;
+  }
+  &__top {
+    display: flex;
+    flex-direction: row;
     gap: 988px;
-    display: inline-flex;
     .contacts {
-      width: 100%;
-      height: 100%;
+      display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
       gap: 30px;
-      display: inline-flex;
-      &__phone {
-        color: white;
+      .phone {
         font-size: 19px;
-        font-family: Raleway;
         font-weight: 600;
         letter-spacing: 0.38px;
-        word-wrap: break-word;
-        text-decoration: none;
       }
-      &__mail {
-        color: white;
+      .mail {
         font-size: 17px;
-        font-family: Raleway;
         font-weight: 400;
         letter-spacing: 0.34px;
-        word-wrap: break-word;
-        text-decoration: none;
       }
-      &__address {
-        color: white;
+      .address {
         font-size: 17px;
-        font-family: Raleway;
         font-weight: 400;
         letter-spacing: 0.34px;
-        word-wrap: break-word;
       }
     }
-    .social {
-      width: 100%;
-      height: 100%;
+    .socials {
+      display: flex;
       justify-content: center;
       align-items: flex-end;
       gap: 30px;
-      display: inline-flex;
       &__link {
-        width: 100%;
-        height: 100%;
-        position: relative;
         .first-social {
+          width: 43px;
+          height: 44px;
           background-image: url(../img/first-social.svg);
         }
         .second-social {
+          width: 43px;
+          height: 44px;
           background-image: url(../img/second-social.svg);
         }
       }
     }
   }
-  &__secondline {
+  &__bottom {
     width: 100%;
     height: 100%;
     justify-content: flex-start;

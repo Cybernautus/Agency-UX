@@ -1,0 +1,45 @@
+.qa {
+  .wrap {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 60px;
+    display: flex;
+  }
+  &__title {
+    font-size: 44px;
+    font-weight: 500;
+    letter-spacing: 0.88px;
+  }
+  .accordion {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    display: flex;
+    &__item {
+      width: 1440px;
+      padding: 30px;
+      background: #232323;
+      border-radius: 5px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      display: flex;
+    }
+    &__content {
+      justify-content: flex-start;
+      align-items: flex-start;
+      display: flex;
+      .question {
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 0.60px;
+      }
+      .answer {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 25px;
+      }
+    }
+  }
+}
